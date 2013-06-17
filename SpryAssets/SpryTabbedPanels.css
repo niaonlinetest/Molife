@@ -1,0 +1,26 @@
+@charset "UTF-8";
+.TabbedPanels { overflow: hidden; margin: 0px; padding: 0px; clear: none; width: 100%; /* IE Hack to force proper layout when preceded by a paragraph. (hasLayout Bug)*/ }
+.arrow-yllw{display: none;position: absolute;background: url(../images/arrow-y.png);width: 12px;height: 8px;margin-top: 10px;
+left: 50%;margin-left: -6px;}
+.TabbedPanelsTabGroup { margin: 0px; padding: 0px; height: 26px;border-bottom: solid 2px #ffca01;display: block;}
+.TabbedPanelsTab { position: relative; top: 1px; float: left; padding: 4px 20px 9px 0;   font: normal 14px sans-serif;   list-style: none;  color: #fff;  cursor: pointer;margin-right: 20px;text-transform: uppercase; }
+.TabbedPanelsTabHover {   }
+.TabbedPanelsTabSelected {  color: #ffca01;  }
+.TabbedPanelsTabSelected .arrow-yllw {display: block;    }
+.TabbedPanelsTab a { color: black; text-decoration: none; }
+.TabbedPanelsContentGroup { height: 290px;clear: both;   background: url(../images/mega-sdw.png); padding-top: 20px;   }
+.TabbedPanelsContent { overflow: hidden;/*  padding: 4px;  */}
+.TabbedPanelsContentVisible { }
+.VTabbedPanels { overflow: hidden; zoom: 1; }
+.VTabbedPanels .TabbedPanelsTabGroup { float: left; width: 10em; height: 20em; background-color: #EEE; position: relative; border-top: solid 1px #999; border-right: solid 1px #999; border-left: solid 1px #CCC; border-bottom: solid 1px #CCC; }
+.VTabbedPanels .TabbedPanelsTab { float: none; margin: 0px; border-top: none; border-left: none; border-right: none; }
+.VTabbedPanels .TabbedPanelsTabSelected { background-color: #EEE; border-bottom: solid 1px #999; }
+.VTabbedPanels .TabbedPanelsContentGroup { clear: none; float: left; padding: 0px; width: 30em; height: 20em; }
+
+/* Styles for Printing */
+@media print {
+.TabbedPanels { overflow: visible !important; }
+.TabbedPanelsContentGroup { display: block !important; overflow: visible !important; height: auto !important; }
+.TabbedPanelsContent { overflow: visible !important; display: block !important; clear: both !important; }
+.TabbedPanelsTab { overflow: visible !important; display: block !important; clear: both !important; }
+}

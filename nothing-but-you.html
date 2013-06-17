@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<title>Molife</title>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/gridpak.css" />
+<link href="css/SpryAccordion.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/gridpak.js"></script>
+
+<!--Theme bar -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tabSlideOut.v1.3.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(function(){
+        $('.slide-out-div').tabSlideOut({
+            tabHandle: '.handle',                     //class of the element that will become your tab
+            pathToTabImage: 'images/right-tab.png', //path to the image for the tab //Optionally can be set using css
+            imageHeight: '55px',                     //height of tab image           //Optionally can be set using css
+            imageWidth: '28px',                       //width of tab image            //Optionally can be set using css
+            tabLocation: 'right',                      //side of screen where tab lives, top, right, bottom, or left
+            speed: 700,                               //speed of animation
+            action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+            topPos: '77px',                          //position from the top/ use if tabLocation is left or right
+            leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
+            fixedPosition: true                      //options: true makes it stick(fixed position) on scroll
+        });
+    }); 
+});
+</script>
+
+
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!-- <script src="js/jquery-1.7.1.min.js"></script> -->
+<script src="js/jquery.masonry.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(function(){
+
+    var $innerPack = $('.innerPack');
+  
+    $innerPack.imagesLoaded( function(){
+      $innerPack.masonry({
+        itemSelector : '.box2'
+      });
+    });
+  }); 
+});
+</script>
+
+<!-- <script src="js/jquery.min.js"></script> 
+<script type="text/javascript">
+  $(document).ready(function() {
+   $('#innerPack').hover(
+        function() {
+            $(this).find('.categoryName').animate({
+                bottom: '0%'
+            }, 'slow' );
+			
+        },function() {
+            $(this).find('.categoryName').animate({
+                bottom: '-100%'
+            },'slow');
+        }
+    );
+});
+</script>-->
+
+</head>
+
+<body>
+<!--theme bar -->
+<div class="slide-out-div">
+  <a class="handle" href="#"></a>
+  Choose Your Color
+  <ul>
+    <li class="theme1 active"><a href=""><img src="images/t1.png" alt="">Sunshine</a></li>
+    <li class="theme2"><a href=""><img src="images/t2.png" alt="">Shadows</a></li>
+    <li class="theme3"><a href=""><img src="images/t3.png" alt="">Goldfish</a></li>
+    <li class="theme4"><a href=""><img src="images/t4.png" alt="">Jade</a></li>
+    <li class="theme5"><a href=""><img src="images/t5.png" alt="">Denim</a></li>
+    <li class="theme6"><a href=""><img src="images/t6.png" alt="">Cherries</a></li>
+    <li class="theme7"><a href=""><img src="images/t7.png" alt="">Peacock</a></li>
+  </ul>
+</div>
+   <!--end theme -->
+   
+<div class="wrap">
+<header> <div class="logo"><img src="images/logo.png" alt="" /></div>
+<div class="social">
+   <div class="search"><img src="images/search-icon.png" alt=""><div class="search-bx"><input type="text"  class="txt" name="" id=""> <input type="button" class="btn"></div></div> <span class="social-in"><a href="#"><img src="images/rss.png" alt=""></a>
+       <a href="#"><img src="images/you-tube.png" alt=""></a>
+       <a href="#"><img src="images/twitter-icon.png" alt=""></a>
+       <a href="#"><img src="images/fb-icon.png" alt=""></a><span class="gttxt">Get Social</span></span>
+     <div class="cl"></div></div>
+
+<div class="right-hdr">
+<ul class="nav" id="nav" > 
+  <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Nothing but You</a></li>
+    <li><a href="#">Blog</a></li>
+  </ul> </div>
+<div class="cart-wish"> 
+<div class="cart-ico"><img src="images/basket.png" alt="" /></div>
+<div class="wish">WHISH LIST (2) </div>
+</div>
+ 
+
+<div class="cl"></div>  
+<div class="sub-nav"><a href="#">Deal</a> | <a href="#">Top Selling</a> | <a href="#">Customer Support</a>  <span class="btns2"><a href="#">Login</a> | <a href="#">Register</a></span></div>
+</header>
+
+
+<div class="main">
+
+<div class="molifeLikes">
+
+    <div class="userLikeBox">
+     <div class="userPhoto">
+       <img src="images/dummy_user.jpg" width="260" height="247" alt="user" /> </div>
+     
+     <div class="userDetail">
+      <h4>Like us to see how you looks Here and enroll yourself for freebies</h4>
+      <div class="likeButtons">
+      <a href="#"><img src="images/facebook-like-us.png" width="55" height="24" alt="likeButtons" /></a>
+      </div>
+     </div>
+     
+    </div>
+
+  <div class="innerPack">
+  
+    <div class="likeBox box2">
+    <img src="images/molife (1).jpg" alt="molife1" />
+     <div class="categoryName">
+      <div class="likeFb"><a href="#"><img src="images/facebook-like-us.png" width="55" height="24" alt="likeButtons" /></a></div>
+      
+      <div class="categoryList">
+        <h4>Casing</h4>
+        <ul>
+        <li>Adventure</li>
+        <li>Reverve</li>
+        <li>Verve</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    
+     <div class="likeBox box2">
+    <img src="images/molife (2).jpg" alt="molife1" />
+    <div class="categoryName">
+      <div class="likeFb"><a href="#"><img src="images/facebook-like-us.png" width="55" height="24" alt="likeButtons" /></a></div>
+      
+      <div class="categoryList">
+        <h4>Casing</h4>
+        <ul>
+        <li>Adventure</li>
+        <li>Reverve</li>
+        <li>Verve</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    
+     <div class="likeBox box2">
+    <img src="images/molife (3).jpg" alt="molife1" />
+    <div class="categoryName">
+      <div class="likeFb"><a href="#"><img src="images/facebook-like-us.png" width="55" height="24" alt="likeButtons" /></a></div>
+      <div class="categoryList">
+        <h4>Casing</h4>
+        <ul>
+        <li>Adventure</li>
+        <li>Reverve</li>
+        <li>Verve</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    
+     <div class="likeBox box2">
+    <img src="images/molife (4).jpg" alt="molife1" />
+    </div>
+    
+    
+     <div class="likeBox box2">
+    <img src="images/molife (5).jpg" alt="molife1" />
+    </div>
+    
+     <div class="likeBox box2">
+    <img src="images/molife (6).jpg" alt="molife1" />
+    </div>
+    
+     <div class="likeBox box2">
+    <img src="images/molife (7).jpg" alt="molife1" />
+    </div>
+    
+     <div class="likeBox box2">
+    <img src="images/molife (8).jpg" alt="molife1" />
+    </div>
+    
+     <div class="likeBox box2">
+    <img src="images/molife (9).jpg" alt="molife1" />
+    </div>
+    
+     <div class="likeBox box2">
+    <img src="images/molife (10).jpg" alt="molife1" />
+    </div>
+    
+     <div class="likeBox box2">
+    <img src="images/molife (11).jpg" alt="molife1" />
+    </div>
+    
+     <div class="likeBox box2">
+    <img src="images/molife (12).jpg" alt="molife1" />
+    </div>
+
+  </div>
+</div>
+
+<div class="molifeSocial" style="padding:0 0 0 0;">
+<h1>Checkout the Latest Video</h1>
+<div class="molifeWatch"><!-- <img src="images/video.jpg" width="630" height="243" alt="video" /> --><object width="300" height="315"><param name="movie" value="http://www.youtube.com/v/YvQEkNkwra4?hl=en_US&amp;version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/YvQEkNkwra4?hl=en_US&amp;version=3" type="application/x-shockwave-flash" width="300" height="240"allowscriptaccess="always" allowfullscreen="true"></embed></object></div>
+
+<div class="molifeTwiterWidget">
+<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/niaonlinetest" data-widget-id="340328256060403713">Tweets by @niaonlinetest</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+<div class="molifeFacebookWidget">
+<div class="fb-like-box" data-href="https://www.facebook.com/pages/Molife-World/146375178822302" data-width="292" data-height="530" data-show-faces="true" data-stream="true" data-show-border="true" data-header="true"></div>
+</div>
+
+</div>
+
+<div class="cl"></div>
+</div>
+
+
+</div>
+<footer>
+<div class="ftr-in"><div class="ft-nav"><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Contact</a> | <a href="#">Career</a> | <a href="#">FAQs</a> | <a href="#">Launch</a> | <a href="#">Registration</a> | <a href="#">Sitemap</a> | <a href="#">Policies</a> | <a href="#">Dislaimer</a></div><div class="coptright">© Copyright 2013. All rights reserved</div></div>
+<div class="cl"></div></footer>
+<script type="text/javascript">
+var Accordion1 = new Spry.Widget.Accordion("Accordion1",{useFixedPanelHeights: false});
+</script>
+
+
+
+  <!-- jQuery -->
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+  
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+  
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+  
+  <!-- Optional FlexSlider Additions -->
+  <script src="js/jquery.easing.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script defer src="js/demo.js"></script>
+</body>
+</html>

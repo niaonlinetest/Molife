@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.Accordion { padding: 0 15px; overflow: hidden; }
+.AccordionPanel { margin: 0px; padding: 0px; }
+.AccordionPanelTab {  margin: 0px; padding: 2px; cursor: pointer; -moz-user-select: none; -khtml-user-select: none; }
+.AccordionPanelTab span{ display:block; padding-left: 15px; background-image: url(../images/arrows.png); background-position: 0px 16px; background-repeat: no-repeat;}
+.AccordionPanelContent { overflow: auto; margin: 0px; padding: 0px; height: 200px; }
+.AccordionPanelOpen .AccordionPanelTab span { display: block; background-image: url(../images/arrows.png);background-position:   0px -19px; background-repeat: no-repeat; }
+.AccordionPanelTabHover { color: #555555; }
+.AccordionPanelOpen .AccordionPanelTabHover { color: #555555; }
+.AccordionPanelOpen .bgs { background:url(../images/dot.png) repeat-x bottom;}
+.AccordionFocused .AccordionPanelTab {   }
+/* This is an example of how to change the appearance of the panel tab that is
+ * currently open when the Accordion has focus.
+ */
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTab {  }
+/* Rules for Printing */
+
+
+/* Accordian 2 */
+.Accordion2 { padding: 0 0; overflow: hidden; }
+.AccordionPanel2 { margin:0 0 9px 0; padding: 0px; }
+.AccordionPanelTab2 {  margin: 0px; padding:3px 10px; cursor: pointer; -moz-user-select: none; -khtml-user-select: none; }
+.AccordionPanelTab2 span{ display:block; padding-left: 15px; background-image: url(../images/arrows.png); background-position: 0px 16px; background-repeat: no-repeat;}
+.AccordionPanelContent2 { overflow: auto; margin: 0px; padding: 0px; /* height: 200px; */ }
+.AccordionPanelOpen2 .AccordionPanelTab2 span { display: block; background-image: url(../images/arrows.png);background-position:   0px -19px; background-repeat: no-repeat; }
+.AccordionPanelTabHover2 { color: #555555; }
+.AccordionPanelOpen2 .AccordionPanelTabHover2 { color: #555555; }
+.AccordionPanelOpen2 .bgs { background:url(../images/dot.png) repeat-x bottom;}
+.AccordionFocused2 .AccordionPanelTab2 {   }
+/* This is an example of how to change the appearance of the panel tab that is
+ * currently open when the Accordion has focus.
+ */
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTab {  }
+
+/* End Accordian 2 */
+
+
+@media print {
+.Accordion { overflow: visible !important; }
+.AccordionPanelContent { display: block !important; overflow: visible !important; height: auto !important; }
+}

@@ -1,0 +1,645 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<title>Molife</title>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/gridpak.css" />
+<link href="css/SpryAccordion.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/gridpak.js"></script>
+<script src="js/SpryAccordion.js" type="text/javascript"></script>
+
+<!--Price Slider-->
+  <link rel="stylesheet" href="css/jquery-ui.css" />
+  <!-- <script src="js/jquery-1.9.1.js"></script> -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/script.js"></script>
+<!--Price Slider-->
+
+<!--Start Popoup-->
+<!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+<script type="text/javascript">
+		
+			$(document).ready(function(){
+			
+				$('.lightbox').click(function(){
+					$('.backdrop, .box').animate({'opacity':'.50'}, 300, 'linear');
+					$('.box').animate({'opacity':'1.00'}, 300, 'linear');
+					$('.backdrop, .box').css('display', 'block');
+				});
+				
+				$('.close').click(function(){
+					close_box();
+				});
+				
+				$('.backdrop').click(function(){
+					close_box();
+				});
+			
+			});
+			
+			function close_box()
+			{
+				$('.backdrop, .box').animate({'opacity':'0'}, 300, 'linear', function(){
+					$('.backdrop, .box').css('display', 'none');
+				});
+			}
+		
+		</script>
+<!--End Popoup-->
+
+
+<!--theme bar -->
+<!-- <script src="js/jquery.min.js"></script> --> 
+<script src="js/jquery.tabSlideOut.v1.3.js"></script>
+  <script type="text/javascript">
+$(document).ready(function(){
+    $(function(){
+        $('.slide-out-div').tabSlideOut({
+            tabHandle: '.handle',                     //class of the element that will become your tab
+            pathToTabImage: 'images/right-tab.png', //path to the image for the tab //Optionally can be set using css
+            imageHeight: '55px',                     //height of tab image           //Optionally can be set using css
+            imageWidth: '28px',                       //width of tab image            //Optionally can be set using css
+            tabLocation: 'right',                      //side of screen where tab lives, top, right, bottom, or left
+            speed: 700,                               //speed of animation
+            action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+            topPos: '77px',                          //position from the top/ use if tabLocation is left or right
+            leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
+            fixedPosition: true                      //options: true makes it stick(fixed position) on scroll
+        });
+
+    }); 
+	
+});
+</script>
+
+</head>
+
+<body>
+<!--theme bar -->
+<div class="slide-out-div">
+  <a class="handle" href="#"></a>
+  Choose Your Color
+  <ul>
+    <li class="theme1 active"><a href=""><img src="images/t1.png" alt="">Sunshine</a></li>
+    <li class="theme2"><a href=""><img src="images/t2.png" alt="">Shadows</a></li>
+    <li class="theme3"><a href=""><img src="images/t3.png" alt="">Goldfish</a></li>
+    <li class="theme4"><a href=""><img src="images/t4.png" alt="">Jade</a></li>
+    <li class="theme5"><a href=""><img src="images/t5.png" alt="">Denim</a></li>
+    <li class="theme6"><a href=""><img src="images/t6.png" alt="">Cherries</a></li>
+    <li class="theme7"><a href=""><img src="images/t7.png" alt="">Peacock</a></li>
+  </ul>
+</div>
+   <!--end theme -->
+   
+<div class="wrap">
+<header> <div class="logo"><img src="images/logo.png" alt="" /></div>
+<div class="social">
+   <div class="search"><img src="images/search-icon.png" alt=""><div class="search-bx"><input type="text"  class="txt" name="" id=""> <input type="button" class="btn"></div></div> <span class="social-in"><a href="#"><img src="images/rss.png" alt=""></a>
+       <a href="#"><img src="images/you-tube.png" alt=""></a>
+       <a href="#"><img src="images/twitter-icon.png" alt=""></a>
+       <a href="#"><img src="images/fb-icon.png" alt=""></a><span class="gttxt">Get Social</span></span>
+     <div class="cl"></div></div>
+
+<div class="right-hdr">
+<ul class="nav" id="nav" > 
+  <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Nothing but You</a></li>
+    <li><a href="#">Blog</a></li>
+  </ul> </div>
+<div class="cart-wish"> 
+<div class="cart-ico"><img src="images/basket.png" alt="" /></div>
+<div class="wish">WHISH LIST (2) </div>
+</div>
+ 
+
+<div class="cl"></div>  
+<div class="sub-nav"><a href="#">Deal</a> | <a href="#">Top Selling</a> | <a href="#">Customer Support</a>  <span class="btns2"><a href="#">Login</a> | <a href="#">Register</a></span></div>
+</header>
+<div class="main">
+<div class="aside"> 
+<div class="filter-box">
+<div class="title">Products</div>
+<ul class="check">
+<li><label><input type="checkbox" name="checkbox" id="checkbox" /> Screen Life</label></li>
+<li><label > <input type="checkbox" name="checkbox" id="checkbox" /> Cover</label></li>
+<li><label >  <input type="checkbox" name="checkbox" id="checkbox" /> Casing</label></li>
+<li> <label ><input type="checkbox" name="checkbox" id="checkbox" /> Ultrabuds</label></li>
+<li><label ><input type="checkbox" name="checkbox" id="checkbox" /> Powerbank </label> </li>
+<li> <label ><input type="checkbox" name="checkbox" id="checkbox" /> Any mode</label></li>
+<li> <label ><input type="checkbox" name="checkbox" id="checkbox" /> Holi Serice</label></li>
+</ul>
+</div>
+
+<div class="filter-box">
+<div class="title">Categories</div>
+<ul class="check">
+<li><label><input type="checkbox" name="checkbox" id="checkbox" /> Verve</label></li>
+<li><label> <input type="checkbox" name="checkbox" id="checkbox" /> Adventure</label></li>
+<li><label>  <input type="checkbox" name="checkbox" id="checkbox" /> Revere</label></li>
+</ul>
+</div>
+<div class="filter-box">
+<div class="title">Brands</div>
+<ul class="check">
+<li><label><input type="checkbox" name="checkbox" id="checkbox" /> Samsung</label></li>
+<li><label > <input type="checkbox" name="checkbox" id="checkbox" /> Nokia</label></li>
+<li><label >  <input type="checkbox" name="checkbox" id="checkbox" /> Apple</label></li>
+<li> <label ><input type="checkbox" name="checkbox" id="checkbox" /> HTC</label></li>
+</ul>
+</div>
+<div class="filter-box">
+<div class="title">Mobility Device Type</div>
+<ul class="check">
+<li><label><input type="checkbox" name="checkbox" id="checkbox" />
+   Smart Phone</label></li>
+<li><label > <input type="checkbox" name="checkbox" id="checkbox" />
+   Feature Phone</label></li>
+<li><label >  <input type="checkbox" name="checkbox" id="checkbox" />
+   Iphone</label></li>
+<li> <label ><input type="checkbox" name="checkbox" id="checkbox" />
+   Tablet<br />
+</label></li>
+ 
+</ul>
+</div>
+
+<div class="filter-box">
+<div class="title">Select Device</div>
+<!--Start accordian-->
+ <div id="Accordion1" class="Accordion" tabindex="0">
+   <div class="AccordionPanel">
+     <div class="AccordionPanelTab"><span>Nokia</span></div>
+     <div class="AccordionPanelContent">
+         <ul class="accordion-menu">
+          <li><a href="#">Galaxy III</a></li>
+          <li><a href="#">Galaxy s</a></li>
+          <li><a href="#">Samsung Note</a></li>
+          <li><a href="#">Samsung Pad</a></li>
+         </ul>
+       </div>
+   </div>
+   
+   
+   <div class="AccordionPanel">
+     <div class="AccordionPanelTab"><span>Apple</span></div>
+       <div class="AccordionPanelContent">
+       <ul class="accordion-menu">
+          <li><a href="#">Galaxy III</a></li>
+          <li><a href="#">Galaxy s</a></li>
+          <li><a href="#">Samsung Note</a></li>
+          <li><a href="#">Samsung Pad</a></li>
+         </ul>
+        </div>
+   </div>
+   
+   
+   <div class="AccordionPanel">
+     <div class="AccordionPanelTab nobg bgs"><span>LG</span></div>
+     <div class="AccordionPanelContent">
+     <ul class="accordion-menu">
+          <li><a href="#">Galaxy III</a></li>
+          <li><a href="#">Galaxy s</a></li>
+          <li><a href="#">Samsung Note</a></li>
+          <li><a href="#">Samsung Pad</a></li>
+         </ul>
+     </div>
+   </div>
+   
+   
+   
+ </div><!--End accordian-->
+ 
+</div>
+
+<div class="filter-box">
+<div class="title">Price</div>
+   <div class="price-range">
+    <div id="slider_price"></div>
+    <div class="range">	
+    <span id="app_min_price" ></span>
+	<span id="app_max_price" style="float: right"></span></div>
+  </div>
+</div>
+</div>
+
+<div class="content">
+<div class="brd-cm">
+<a href="#">Home</a> > <a href="#">Products</a> > <a href="#"class="last-cm">Casing</a>
+</div>
+<h1 class="page-name">Casing</h1>
+
+<div class="pro-ctgry">
+		<div class="title">Samsung</div>
+        
+<!--popup-->
+      <div class="backdrop"></div>
+	   <div class="box">
+      <div class="cls"><span class="close"></span></div>
+       <div class="popup-content">
+         <div class="pop-left">
+         <div class="basicInfo"> 
+             <div class="proPic">
+               <img src="images/M-MLP8733BK.png" width="178" height="250" alt="pro-pic" />
+              </div>
+         </div>
+         
+         </div> <!--End popupLeft-->
+         
+         <div class="pop-right">
+         <h2 class="proModel">Samsung Galaxy055</h2>
+         <div class="ratingBox">
+            <span class="rateStar"></span> 
+            <span class="totalRating"><a href="#">(0)</a></span>
+          </div>
+         <p>nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh           id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio           tincidunt auctor a ornare odio. </p>
+         <span class="proCode">Product Code: P8733BK(19003/19000) </span>
+           <div class="rateCompare">
+            <span class="oldRate">Rs. 1000</span>
+            <span class="newRate">Rs. 800 <img src="images/offer.png" alt="offer" class="offer"/></span>
+           </div>
+           
+           <div class="cartBox">
+           <span class="addCart"><a href="#">ADD TO CART</a></span> 
+           <span class="addCart wishlist"><a href="#">ADD TO WISHLIST</a></span>
+           </div>
+           
+           <div class="colorChoice">
+           <span class="colorHead">See with Defferent Color</span>
+           
+           <div class="colorBox black"><img src="images/dummy_pic.jpg" width="50" height="42" alt="pic1" /></div> 
+           <div class="colorBox red"><img src="images/dummy_pic.jpg" width="50" height="42" alt="pic1" /></div> 
+           <div class="colorBox blue"><img src="images/dummy_pic.jpg" width="50" height="42" alt="pic1" /></div> 
+           <div class="colorBox white"><img src="images/dummy_pic.jpg" width="50" height="42" alt="pic1" /></div>
+           
+           </div>
+           
+           </div>
+           
+         </div><!--End pop-right-->
+         
+       </div>
+   <!--end popup-->   
+   
+     <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <div class="pro-box">
+              <div class="pro-hover"> <div class="over-option">
+              <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+              <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+              <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+              </div>
+              </div>
+                <div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+                <div class="pro-box-title">19003/19000</div>
+                <div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+                <div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+                <div class="pro-box-price">699</div>
+              </div>
+              
+              <div class="pro-box">
+              <div class="pro-hover"> <div class="over-option">
+              <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+              <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+              <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+              </div>
+              </div>
+                <div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+                <div class="pro-box-title">19003/19000</div>
+                <div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+                <div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+                <div class="pro-box-price">699</div>
+              </div>
+              
+              <div class="pro-box no-bg">
+              <div class="pro-hover"> <div class="over-option">
+              <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+              <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+              <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+              </div>
+              </div>
+              
+              
+              
+                <div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+                <div class="pro-box-title">19003/19000</div>
+                <div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+                <div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+                <div class="pro-box-price">699</div>
+              </div>
+              <div class="cl"></div>
+            </li>
+            
+            
+            <li>
+              <div class="pro-box">
+              <div class="pro-hover"> <div class="over-option">
+              <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+              <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+              <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+              </div>
+              </div>
+                <div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+                <div class="pro-box-title">19003/19000</div>
+                <div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+                <div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+                <div class="pro-box-price">699</div>
+              </div>
+              
+              <div class="pro-box">
+              <div class="pro-hover"> <div class="over-option">
+              <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+              <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+              <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+              </div>
+              </div>
+                <div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+                <div class="pro-box-title">19003/19000</div>
+                <div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+                <div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+                <div class="pro-box-price">699</div>
+              </div>
+              
+              <div class="pro-box no-bg">
+              <div class="pro-hover"> <div class="over-option">
+              <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+              <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+              <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+              </div>
+              </div>
+              
+              
+              
+                <div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+                <div class="pro-box-title">19003/19000</div>
+                <div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+                <div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+                <div class="pro-box-price">699</div>
+              </div>
+              <div class="cl"></div>
+            </li>
+            
+            
+            <li>
+              <div class="pro-box">
+              <div class="pro-hover"> <div class="over-option">
+              <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+              <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+              <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+              </div>
+              </div>
+                <div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+                <div class="pro-box-title">19003/19000</div>
+                <div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+                <div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+                <div class="pro-box-price">699</div>
+              </div>
+              
+              <div class="pro-box">
+              <div class="pro-hover"> <div class="over-option">
+              <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+              <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+              <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+              </div>
+              </div>
+                <div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+                <div class="pro-box-title">19003/19000</div>
+                <div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+                <div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+                <div class="pro-box-price">699</div>
+              </div>
+              
+              <div class="pro-box no-bg">
+              <div class="pro-hover"> <div class="over-option">
+              <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+              <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+              <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+              </div>
+              </div>
+              
+              
+              
+                <div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+                <div class="pro-box-title">19003/19000</div>
+                <div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+                <div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+                <div class="pro-box-price">699</div>
+              </div>
+              <div class="cl"></div>
+            </li>
+            
+            <li>
+              <div class="pro-box">
+              <div class="pro-hover"> <div class="over-option">
+              <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+              <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+              <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+              </div>
+              </div>
+                <div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+                <div class="pro-box-title">19003/19000</div>
+                <div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+                <div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+                <div class="pro-box-price">699</div>
+              </div>
+              
+              <div class="pro-box">
+              <div class="pro-hover"> <div class="over-option">
+              <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+              <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+              <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+              </div>
+              </div>
+                <div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+                <div class="pro-box-title">19003/19000</div>
+                <div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+                <div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+                <div class="pro-box-price">699</div>
+              </div>
+              
+              <div class="pro-box no-bg">
+              <div class="pro-hover"> <div class="over-option">
+              <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+              <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+              <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+              </div>
+              </div>
+              
+              
+              
+                <div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+                <div class="pro-box-title">19003/19000</div>
+                <div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+                <div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+                <div class="pro-box-price">699</div>
+              </div>
+              <div class="cl"></div>
+            </li>
+            
+
+          </ul>
+        </div>
+        
+    
+    
+    
+</div>
+<div class="pro-ctgry">
+		<div class="title">Samsung</div>
+    <div class="pro-box">
+    <div class="pro-hover"> <div class="over-option">
+    <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+    <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+  <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+    </div>
+     </div>
+    	<div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+    	<div class="pro-box-title">19003/19000</div>
+    	<div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+    	<div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+    	<div class="pro-box-price">699</div>
+    </div>
+    <div class="pro-box">
+    <div class="pro-hover"> <div class="over-option">
+    <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+    <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+  <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+    </div>
+     </div>
+    	<div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+    	<div class="pro-box-title">19003/19000</div>
+    	<div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+    	<div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+    	<div class="pro-box-price">699</div>
+    </div>
+    <div class="pro-box no-bg">
+    <div class="pro-hover"> <div class="over-option">
+    <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+    <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+  <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+    </div>
+     </div>
+    	<div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+    	<div class="pro-box-title">19003/19000</div>
+    	<div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+    	<div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+    	<div class="pro-box-price">699</div>
+    </div>
+    <div class="cl"></div>
+    
+    
+</div>
+<div class="pro-ctgry">
+		<div class="title">Samsung</div>
+    <div class="pro-box">
+    <div class="pro-hover"> <div class="over-option">
+    <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+    <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+  <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+    </div>
+     </div>
+    	<div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+    	<div class="pro-box-title">19003/19000</div>
+    	<div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+    	<div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+    	<div class="pro-box-price">699</div>
+    </div>
+    <div class="pro-box">
+    <div class="pro-hover"> <div class="over-option">
+    <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+    <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+  <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+    </div>
+     </div>
+    	<div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+    	<div class="pro-box-title">19003/19000</div>
+    	<div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+    	<div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+    	<div class="pro-box-price">699</div>
+    </div>
+    <div class="pro-box no-bg">
+    <div class="pro-hover"> <div class="over-option">
+    <a href="#" class="lightbox"><img src="images/pro-view-ico.png" alt="">Quick View</a>
+    <a href="#"><img src="images/pro-cart-ico.png" alt="">ADD TO CART</a>
+  <a href="#"><img src="images/list-ico.png" alt="">ADD TO  WISH LIST</a>
+    </div>
+     </div>
+    	<div class="pro-box-image"><img src="images/pro-img.png" alt=""></div>
+    	<div class="pro-box-title">19003/19000</div>
+    	<div class="pro-box-text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+    	<div class="pro-box-stars"><img src="images/star_rating.png" width="68" height="13" alt="rating-star" /> 
+        <span>(40 Reviews)</span> </div>
+    	<div class="pro-box-price">699</div>
+    </div>
+    <div class="cl"></div>
+    
+    
+</div>
+
+</div>
+<div class="cl"></div>
+</div>
+
+
+</div>
+<footer>
+<div class="ftr-in"><div class="ft-nav"><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Contact</a> | <a href="#">Career</a> | <a href="#">FAQs</a> | <a href="#">Launch</a> | <a href="#">Registration</a> | <a href="#">Sitemap</a> | <a href="#">Policies</a> | <a href="#">Dislaimer</a></div><div class="coptright">© Copyright 2013. All rights reserved</div></div>
+<div class="cl"></div></footer>
+<script type="text/javascript">
+var Accordion1 = new Spry.Widget.Accordion("Accordion1",{useFixedPanelHeights: false});
+</script>
+
+
+
+  <!-- jQuery -->
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+  
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+  
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+  
+  <!-- Optional FlexSlider Additions -->
+  <script src="js/jquery.easing.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script defer src="js/demo.js"></script>
+</body>
+</html>

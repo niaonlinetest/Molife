@@ -1,0 +1,188 @@
+/*!
+ * Gridpak Beta CSS
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+ 
+ 
+
+/* Reusable column setup */
+/*pone */
+.col { border: 0px solid rgba(0,0,0,0); float: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -moz-background-clip: padding-box !important; -webkit-background-clip: padding-box !important; background-clip: padding-box !important; }
+
+   @media screen and (min-width: 320px) and (max-width: 479px) {
+    	 
+    
+.col { margin-left: 1%; padding: 0 0%; }
+.row .col:first-child { margin-left: 0; }
+.span_1 { width: 10.2222222222%; }
+.span_2 { width: 21.4444444444%; }
+.span_3 { width: 32.6666666667%; }
+.span_4, .logo { width: 43.8888888889%; }
+.span_5, .social { width: 55.1111111111%; }
+.social, .search, .social-in {float: right;}
+.search{padding: 0 0 10px 75px;width: 180px;}
+.span_6 { width: 66.3333333333%; }
+.span_7 { width: 77.5555555556%; }
+.span_8 { width: 88.7777777778%; }
+.social-in a{ margin-left: 5px;}
+.span_9, .cart-wish, .right-hdr, ul.nav,  .social-in { margin-left: 0; width: 100%; float: none !important; }
+ul.nav{width: 320px;background: #333;display: block; }
+.right-hdr{clear: both; height: 60px;border-bottom: 1px solid #e5e5e5;border-top: 1px solid #e5e5e5;
+margin-bottom: 10px;}
+.logo { margin-bottom: 10px; }
+.logo img{width: 122px;}
+.search { position: relative !important; float: right; }
+.search img { display: none; }
+ul.nav li {float: left; 
+display: block;
+padding: 0 7.5%;
+list-style: none; }
+.social{margin-bottom: 10px;}.search-bx .txt{width: 121px;}
+.search-bx { max-width: 175px; background: url(../images/shearch-bg3.png) no-repeat; display: block;
+ margin: 0px; position: static; left: 0; margin-left: 5px }
+.wrap, .ftr-in { max-width:310px;margin:0 auto; padding-top: 10px;}
+ .ftr-in {text-align: center;font-size: 10px;}
+ .cart-wish{margin-bottom: 10px;height: 28px;}
+ .cart-ico{float: left; }
+ .ft-nav{font-size: 10px;}
+ .gttxt{display: none !important;}
+ .wish{float: right;line-height: 28px;background: none;}.sub-nav{ text-align: left;font-size: 11px;}
+}
+    
+    
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+    	 
+    
+.col { margin-left: 1%; padding: 0 0%; }
+.row .col:first-child { margin-left: 0; }
+.span_1 { width: 10.2222222222%; }
+.span_2 { width: 21.4444444444%; }
+.span_3 { width: 32.6666666667%; }
+.span_4, .logo { width: 43.8888888889%; }
+.span_5, .social { width: 55.1111111111%; }
+.social, .search, .social-in {float: right;}
+.search{padding: 0 0 10px 65px;width: 200px;}
+.span_6 { width: 66.3333333333%; }
+.span_7 { width: 77.5555555556%; }
+.span_8 { width: 88.7777777778%; }
+.social-in a{ margin-left: 5px;}
+.span_9, .cart-wish, .right-hdr, ul.nav,  .social-in { margin-left: 0; width: 100%; float: none !important; }
+ul.nav{width: 480px;background: #333;display: block; }
+.right-hdr{clear: both; height: 26px;border-bottom: 1px solid #e5e5e5;border-top: 1px solid #e5e5e5;margin-bottom: 10px;}
+.logo { margin-bottom: 10px; }
+.search { position: relative !important; float: right; }
+.search img { display: none; }
+.search-bx { max-width: 195px; background: url(../images/shearch-bg2.png) no-repeat; display: block; margin: 0px; position: static; left: 0; margin-left: 5px }
+.wrap, .ftr-in { max-width:470px;margin:0 auto; padding-top: 10px;}
+ .ftr-in {text-align: center;font-size: 10px;}
+ .cart-wish{margin-bottom: 10px;height: 28px;}
+ .cart-ico{float: left; }
+ .ft-nav{font-size: 10px;}
+ .wish{float: right;line-height: 28px;background: none;}
+}
+/*   ipad */
+    
+    @media screen and (min-width: 768px) and (max-width: 959px) {
+.col { margin-left: 1%; padding: 0 0%; }
+.row .col:first-child { margin-left: 0; }
+.span_1 { width: 7.41666666667%; }
+.span_2 { width: 15.8333333333%; }
+.span_3, .logo { width: 24.25%;   }
+.logo, .social { float: left; }
+.social a{margin-left:2%;}
+.search { position: relative !important; float: right; }
+.search img { display: none; }
+.search-bx { max-width: 195px; background: url(../images/shearch-bg2.png) no-repeat; display: block; margin: 0px; position: static; left: 0; margin-left: 5px }
+.social-in { display: block; padding-top: 4px; float: right; }
+.span_4{ width: 32.6666666667%; }
+.span_5 { width: 41.0833333333%; }
+.span_6, .social-in { width: 49.5%; }
+.span_7 { width: 57.9166666667%; }
+.span_8 { width: 66.3333333333%; }
+.span_9, .cart, .social { width: 74.75%;}
+.cart-wish{min-width:160px;float:right;position:absolute;margin-top:-65px;line-height:28px;margin-left:590px;  }      
+.wish{padding:0 0 0 10px ; background: url(../images/line.png) left top no-repeat;  }
+/* .cart-ico{margin-left: 41.0833333333%;}
+ */.cart-ico,.wish{float:left;}
+.span_10 { width: 83.1666666667%; }
+.span_11{ width: 91.5833333333%; }
+.right-hdr{border-top:1px solid #eaeaea; height:28px;clear:both;}
+.span_12, header, ul.nav,  .wrap { background:none;margin-left: 0; width: 100%;  padding: 15px 0 0; }
+ ul.nav,  .right-hdr {padding:0;}
+ .right-hdr {margin:10px 0 0;}
+ .search-bx .txt{max-width:201px}
+   ul.nav li { padding: 0 5.4%;  border-right:1px solid #e5e5e5; }
+    .wrap, .ftr-in {margin: 0 auto; max-width:748px;}
+    .ft-nav{float: left;}.coptright{float: right;}
+/*   .right-hdr { margin: 10px 0;}*/
+ 
+}
+
+    /* 4. 20 Column Grid 960px - Infinity 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    4.05%
+    Span 2:    9.1%
+    Span 3:    14.15%
+    Span 4:    19.2%
+    Span 5:    24.25%
+    Span 6:    29.3%
+    Span 7:    34.35%
+    Span 8:    39.4%
+    Span 9:    44.45%
+    Span 10:    49.5%
+    Span 11:    54.55%
+    Span 12:    59.6%
+    Span 13:    64.65%
+    Span 14:    69.7%
+    Span 15:    74.75%
+    Span 16:    79.8%
+    Span 17:    84.85%
+    Span 18:    89.9%
+    Span 19:    94.95%
+    Span 20:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 960px) {
+.col { margin-left: 1%; padding: 0 0%; }
+.row .col:first-child { margin-left: 0; }
+.social { float: right; position: relative; }
+.social a { width: 7%; }
+.search { float: right; position: absolute; margin-right: 4.5%; margin-top: 40px; right: 0; }
+.span_1, .search { width: 4.05%; }
+.span_2 { width: 9.1%; }
+.span_3 { width: 14.15%; }
+.span_4 { width: 19.2%; }
+.cart-wish{width:21.2%;}
+.wish{float:left;width:119px;text-align:center;}
+.cart-wish {line-height:32px; float: right;margin-top:10px; }
+.span_5, .logo, .coptright { width: 24.25%;   }
+.span_6 { width: 29.3%; }
+.span_7 { width: 34.35%; }
+.span_8, .social { width: 39.4%; }
+.span_9 { width: 44.45%; }
+.span_10 { width: 49.5%; }
+.span_11, .right-hdr { width: 54.55%; }
+.span_12 { width: 59.6%; }
+ul.nav { width: 86.5%;  }
+.right-hdr { float: left; }
+.span_13 { width: 64.65%; }
+.span_14 { width: 69.7%; }
+.span_15 { width: 74.75%; }
+.right-hdr { padding-top: 15px; }
+.span_16 { width: 79.8%; }
+.span_17 { width: 84.85%; }
+.span_18 { width: 89.9%; }
+.span_19 { width: 94.95%; }
+.span_20, header, .ftr-in,  {   width: 100%;  }
+header{ margin-left: 0; padding: 20px 0 0;border-bottom: 1px solid #eaeaea;}
+.social a{ display:block;float:right;margin-left:2%;}
+.cart-ico{float:left;}
+.search-bx .txt{width:213px;margin-top:8px;}
+ .ftr-in, .wrap { margin:0 auto;max-width:960px;}
+.coptright{float:right;text-align:right; }
+.ft-nav{float:left;}
+}
